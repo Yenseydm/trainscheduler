@@ -7,22 +7,20 @@
     <!-- css-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Arapey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=GFS+Neohellenic|Girassol|Seaweed+Script|Tenali+Ramakrishna&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Train Scheduler</title>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container box">
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Train Scheduler</h1>
-              <p class="lead">Insert quote here about trains</p>
-            </div>
+              <h1 class="display-4" id="title">Train Scheduler</h1>
+              <p class="lead" id="subtitle">Where to next?</p>
           </div>
     
-          <p>Current Train Schedule</p>
+          <p class="headers">Current Train Schedule </p>
         <table class="table table-dark">
             <thead>
               <tr>
@@ -44,15 +42,16 @@
             </tbody>
           </table>
 
-          <p> Add Train</p>
+       
+          <p class="headers"> Add Train </p>
           <form>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Train Name</label>
-                <input type="text" class="form-control" id="trainname-input" placeholder="Train Name">
+                <input type="text" class="form-control" id="trainname-input" placeholder="Train Express">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Destination</label>
-                <input type="text" class="form-control" id="trainname-input" placeholder="Destination">
+                <input type="text" class="form-control" id="trainname-input" placeholder="City, State">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">First Train Time(HH:mm -military time)</label>
@@ -60,13 +59,12 @@
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Frequency (min)</label>
-                <input type="number" class="form-control" id="trainname-input" placeholder="Frequency(mins)">
+                <input type="number" class="form-control" id="trainname-input" placeholder="00">
               </div>
 
               <button type="button" class="btn btn-dark">Add</button>
-
           </form>
-
+        
     </div>
 
 </body>

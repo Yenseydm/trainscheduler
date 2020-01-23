@@ -1,8 +1,36 @@
-.container{
-    font-family: 'Arapey', serif;
+body {
+    background-image: url(../images/background1.jpeg);
+}
 
+.box{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+    color: rgb(58, 58, 58);
 }
 
 .jumbotron {
     text-align: center;
+    color: rgb(58, 58, 58);
 }
+
+#title{
+    font-size: 100px;
+    font-family: 'Girassol', cursive;
+}
+
+#subtitle{
+    font-size: 50px;
+    font-family: 'Seaweed Script', cursive;
+}
+
+.headers{
+    font-size: 20px;
+    color: rgb(255, 246, 220);
+    background-color: rgb(128, 83, 0);
+    text-align: center;
+}
+
+
+
+
