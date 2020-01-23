@@ -1,4 +1,8 @@
-body{
+.container{
     font-family: 'Arapey', serif;
 
+}
+
+.jumbotron {
+    text-align: center;
 }

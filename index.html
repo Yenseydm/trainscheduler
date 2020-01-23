@@ -22,6 +22,7 @@
             </div>
           </div>
     
+          <p>Current Train Schedule</p>
         <table class="table table-dark">
             <thead>
               <tr>
@@ -43,8 +44,27 @@
             </tbody>
           </table>
 
+          <p> Add Train</p>
           <form>
-              
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Train Name</label>
+                <input type="text" class="form-control" id="trainname-input" placeholder="Train Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Destination</label>
+                <input type="text" class="form-control" id="trainname-input" placeholder="Destination">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">First Train Time(HH:mm -military time)</label>
+                <input type="text" class="form-control" id="trainname-input" placeholder="HH:mm">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Frequency (min)</label>
+                <input type="number" class="form-control" id="trainname-input" placeholder="Frequency(mins)">
+              </div>
+
+              <button type="button" class="btn btn-dark">Add</button>
+
           </form>
 
     </div>
