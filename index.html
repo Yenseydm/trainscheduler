@@ -10,7 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=GFS+Neohellenic|Girassol|Seaweed+Script|Tenali+Ramakrishna&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- moment js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
     <title>Train Scheduler</title>
+
 </head>
 <body>
 
@@ -21,7 +30,7 @@
           </div>
     
           <p class="headers">Current Train Schedule </p>
-        <table class="table table-dark">
+        <table class="table table-dark" id="trainTable">
             <thead>
               <tr>
                 <th scope="col">Train Name</th>
@@ -45,15 +54,15 @@
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Destination</label>
-                <input type="text" class="form-control" id="trainname-input" placeholder="City, State">
+                <input type="text" class="form-control" id="city-input" placeholder="City, State">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">First Train Time(HH:mm -military time)</label>
-                <input type="text" class="form-control" id="trainname-input" placeholder="HH:mm">
+                <input type="text" class="form-control" id="time-input" placeholder="HH:mm">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Frequency (min)</label>
-                <input type="number" class="form-control" id="trainname-input" placeholder="00">
+                <input type="number" class="form-control" id="freq-input" placeholder="00">
               </div>
 
               <button type="button" class="btn btn-dark" id="add-train">Add</button>
